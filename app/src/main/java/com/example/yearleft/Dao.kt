@@ -20,8 +20,8 @@ interface Dao {
 
        @Query("SELECT * FROM ImageurlData WHERE date = :idd ")
        suspend fun getbyid(idd:String) : ImageurlData
-//
-//       @Query("SELECT * FROM ImageurlData WHERE id  = 1")
-//        suspend fun getbyid() : ImageurlData
+
+       @Query("SELECT * FROM ImageurlData WHERE id  = 1")
+        suspend fun ggetbyid() : ImageurlData
 
 }
